@@ -1,0 +1,52 @@
+[
+  {
+    "productId": 1,
+    "productName": "Hedgehod",
+    "productCode": "GDN-0011",
+    "releaseDate": "March 19, 2021",
+    "description": "For those that like cuddly pineapples.",
+    "price": 19.95,
+    "starRating": 3.2,
+    "imageUrl": "assets/images/hedgehog.jpg"
+  },
+  {
+    "productId": 2,
+    "productName": "Kitten",
+    "productCode": "GDN-0023",
+    "releaseDate": "March 17, 2022",
+    "description": "The internet's favorite pet.",
+    "price": 32.99,
+    "starRating": 5.0,
+    "imageUrl": "assets/images/kitty.jpg"
+  },
+  {
+    "productId": 5,
+    "productName": "Pupper",
+    "productCode": "TBX-0048",
+    "releaseDate": "May 21, 2022",
+    "description": "Man's best friend.",
+    "price": 89.9,
+    "starRating": 4.8,
+    "imageUrl": "assets/images/pup.jpg"
+  },
+  {
+    "productId": 8,
+    "productName": "Fish",
+    "productCode": "TBX-0022",
+    "releaseDate": "August 15, 2022",
+    "description": "Technically a pet.",
+    "price": 11.55,
+    "starRating": 3.7,
+    "imageUrl": "assets/images/fish.jpg"
+  },
+  {
+    "productId": 10,
+    "productName": "Lizzard",
+    "productCode": "GMG-0042",
+    "releaseDate": "October 15, 2020",
+    "description": "The closest thing to a pet dragon.",
+    "price": 35.95,
+    "starRating": 4.6,
+    "imageUrl": "assets/images/lizzard.jpg"
+  }
+]

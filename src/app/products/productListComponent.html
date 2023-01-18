@@ -1,0 +1,56 @@
+<div class="card">
+    <div class="card-header">
+        {{pageTitle}}   <!--This template expression is interpolated from a class property value-->
+    </div>
+</div>
+<!--Search Filter-->
+<div class="card-body">
+    <div class="row">
+        <div class="col-md-2">Filter by:</div>
+        <div class="col-md-4">
+            <!--Use two-way binding: set a value-->
+            <input type="text" [(ngModel)]='listFilter'/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <!--Use two-way binding: get a value and display it-->
+            <h5>Filtered by: {{listFilter}}</h5>
+        </div>
+    </div>
+</div>
+<!--Products Table-->
+<div class="table-responsive" *ngIf="products.length" >
+    <!--*ngIf statement: only display table if there are products in this property's array-->
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    <button class="btn btn-primary" (click)="toggleElement()">{{showElement? 'Hide': 'Show'}} Product Codes</button>
+                </th>
+                <th>Product</th>
+                <th>Availablity</th>
+                <th>Price</th>
+                <th>Star Rating</th>
+                <th>Code</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <!--For loop to iterate through the (filtered) list of products:-->
+            <tr *ngFor="let item of filteredProducts">
+                <td>
+                    <!--Use Property Binding to set the image property values -->
+                    <img [src]="item.imageUrl" [title]="item.productName" [alt]="item.productName"
+                        [style.width.px]="imageWidth" [style.margin.px]="imageMargin"/>
+                </td>
+                <!--Use Routing to make each productName a link-->
+                <a [routerLink]="['/products', item.productId]">{{item.productName}}</a>
+                <!--Use interpolation to bind to the product parameters-->
+                <td>{{item.releaseDate}}</td>
+                <td>{{item.price | currency:'USD':'symbol':'1.2-2'}}</td>
+                <td><starComponent [rating]="item.starRating" (notify)="onNotify($event)" (ratingClicked)="onRatingClicked($event)"></starComponent></td>      <!--Nested component used as a directive-->
+                <td *ngIf="showElement">{{item.productCode | lowercase | convertToSpaces:'-'}}</td> <!--convertToSpace:'-' passes in the parameters required by this custom pipe-->
+            </tr>
+        </tbody>
+    </table>
+</div>
