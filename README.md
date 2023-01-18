@@ -33,7 +33,7 @@ https://github.com/serengetijade/Project_Angular_WebApp/blob/07c41631c6503b0dec9
 As part of the modularization, the logic to get the list of products is included in the products module. The getProducts method uses HTTP get requests to access a json file that contains the complete string of product objects. The getProduct method uses a pipe to get a specific product from the list and map its data to be used when rendering the productDetails template. 
 https://github.com/serengetijade/Project_Angular_WebApp/blob/07c41631c6503b0dec9b1fc709c5fab0ebe8e51e/src/app/products/productService.ts#L16-L37
 
-![Product_Details](https://github.com/serengetijade/JavaScript/blob/main/Angular-WebApp-Project/src/assets/readmeImages/ProductDetails.jpg)
+![Product_Details](https://github.com/serengetijade/Project_Angular_WebApp/blob/main/src/assets/readmeImages/ProductDetails.jpg)
 
 ## Error handling
 Should an error occur when making the http requests, an error response was added to redirect to the welcome page.
