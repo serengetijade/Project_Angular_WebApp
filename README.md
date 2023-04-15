@@ -2,6 +2,12 @@
 Angular is an open-source web application framework that is useful for adding object-oriented functionality to applications. This project shows a basic web app for displaying  and navigating a list of products. It is meant to highlight back end logic, so styling is minimal. 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.3.
 
+This project is a web app to display product information. It used Angular to embed features into html such as if conditions, for loops, and local variables. 
+- Bound values to variables and executed logic using those values. 
+- Created strongly typed objects using Typescript from a JSON file. 
+- Read data to display in a table format. Used event binding for dynamic display elements. 
+- Updated display based on filter inputs. 
+
 ## Skills Implemented
 - <b>Languages and Libraries:</b>
     - Angular was used to embed features into html such as if conditions, for loops, and local variables. It was used to bind values to variables and execute logic using those values. Components and features were created to modularize the design of the application, allowing for the potential to scale or reuse code.
@@ -47,7 +53,8 @@ https://github.com/serengetijade/Project_Angular_WebApp/blob/07c41631c6503b0dec9
 The starRating directive, shown above, is also an example of event binding. This function was added to show how event binding can be used to respond to user events, such as clicks.
 https://github.com/serengetijade/Project_Angular_WebApp/blob/07c41631c6503b0dec9b1fc709c5fab0ebe8e51e/src/app/products/productListComponent.ts#L66-L71
 
-https://github.com/serengetijade/JavaScript/blob/49e75dcb5ed45b87922736ff61fe3be171e3bb42/Angular-WebApp-Project/src/app/shared/startComponent.ts#L8-L22
+https://github.com/serengetijade/Project_Angular_WebApp/blob/e757486a486be5eb70e921c463a7c140450cdf12/src/app/shared/starComponent.html#L1-L9
+
 ![Event_Binding](https://github.com/serengetijade/Project_Angular_WebApp/blob/main/src/assets/readmeImages/EventDemo.gif)
 
 ## Filter using Two-Way Binding and Property Binding
